@@ -1,11 +1,10 @@
-version: '3.8'
-
 services:
   prometheus:
-    image: prom/prometheus:v2.24.1
+    image: prom/prometheus:latest
     container_name: prometheus
     volumes:
       - ./prometheus:/etc/prometheus:Z
+      - prometheus_data:/prometheus
     command:
       - '--config.file=/etc/prometheus/prometheus.yml'
       - '--storage.tsdb.path=/prometheus'
@@ -22,7 +21,7 @@ services:
       - monitor-net
 
   nodeexporter:
-    image: prom/node-exporter:v1.0.1
+    image: prom/node-exporter:latest
     container_name: nodeexporter
     volumes:
       - /proc:/host/proc:ro
@@ -39,9 +38,8 @@ services:
     networks:
       - monitor-net
 
-
   grafana:
-    image: grafana/grafana:7.4.0
+    image: grafana/grafana:latest
     container_name: grafana
     volumes:
       - grafana_data:/var/lib/grafana
