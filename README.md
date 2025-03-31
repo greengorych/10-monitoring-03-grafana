@@ -82,6 +82,8 @@ node_filesystem_free_bytes{fstype="ext4", instance="nodeexporter:9100", job="nod
 1. Создайте для каждой Dashboard подходящее правило alert — можно обратиться к первой лекции в блоке «Мониторинг».
 2. В качестве решения задания приведите скриншот вашей итоговой Dashboard.
 
+### Ответ
+
 ![alt text](images/image-03.png)
 
 ![alt text](images/image-04.png)
