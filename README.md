@@ -82,6 +82,14 @@ node_filesystem_free_bytes{fstype="ext4", instance="nodeexporter:9100", job="nod
 1. Создайте для каждой Dashboard подходящее правило alert — можно обратиться к первой лекции в блоке «Мониторинг».
 2. В качестве решения задания приведите скриншот вашей итоговой Dashboard.
 
+![alt text](images/image-03.png)
+
+![alt text](images/image-04.png)
+
+![alt text](images/image-05.png)
+
+![alt text](images/image-06.png)
+
 ## Задание 4
 
 1. Сохраните ваш Dashboard.Для этого перейдите в настройки Dashboard, выберите в боковом меню «JSON MODEL». Далее скопируйте отображаемое json-содержимое в отдельный файл и сохраните его.
